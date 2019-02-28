@@ -1,0 +1,11 @@
+.blog-btn{
+    font-weight: 900;
+}
+.blog-tile-card{
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.fav{
+    background-color: lightgray;
+}

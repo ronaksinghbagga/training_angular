@@ -1,0 +1,7 @@
+<div class="card blog-tile-card" [ngClass]="{'fav':post.isFav}">
+  <div class="card-body" (click)="markFav()">
+    <h5 class="card-title" appHighlight backcolor='yellow' textcolor='white'>{{post.title}}</h5>
+    <p class="card-text">{{post.summary}}</p>
+    <a href="#" (click)="readFullSummary()" class="btn btn-primary blog-btn"> {{btntitle}} </a>
+  </div>
+</div>

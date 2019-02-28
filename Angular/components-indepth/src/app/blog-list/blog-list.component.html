@@ -1,0 +1,12 @@
+<!-- <app-blog-tile title="Blog Post 1" summary="This is a sample description"></app-blog-tile> -->
+<!-- OR -->
+<a href="#" (click)="expandAll()">Expand All</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" (click)="favAll()">Favorite All</a>
+<app-paginator 
+[numberOfPages]="blogPost.length"
+(pageNumberClick)="updatePage($event)">
+</app-paginator>
+<app-blog-tile #tile
+*ngFor="let post of blogPost[currentPage]"
+ [post]="post">
+</app-blog-tile>

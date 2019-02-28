@@ -1,0 +1,39 @@
+<header class="border bg-danger">
+  This is Header
+</header>
+<div class="container-fluid">
+  <div class="row border border-dark">
+      <h1 class="display-4"> Cars List</h1>
+  </div>
+  <button (click)="fetchCarList()" style="float: right;margin-top: -65px;margin-right: 10px;" class="btn btn-danger btn-lg">Car Details</button>
+  <div class="row border border-dark">
+    <div class="col-12 col-lg-2 bg-info">column 1</div>
+    <div class="col-12 col-lg-8 border border-dark">
+  <!-- <p class="showErrorMessageStyle"> {{errorMsg}} </p> -->
+<table *ngIf="showDataFlag" class="table table-bordered table-hover">
+  <tr class="bg-danger">
+    <th>Id</th>
+    <th>Name</th>
+    <th>type</th>
+    <th>carno</th>  
+    <th>car insurance date</th>
+  </tr>
+  <tr *ngFor="let car of cardetails" style="background-color: pink;">
+    <td> {{car.id}} </td>
+    <td> {{car.carname}} </td>
+    <td>{{car.cartype}}</td>
+    <td>{{car.carno}} </td>
+    <td>{{car.carinsurancedate}} </td>
+  </tr>
+</table> 
+</div>
+<div class="col-12 col-lg-2 bg-info">column 3</div>
+</div>
+<div class="row border">
+  <div class="col-12 col-lg-8 border bg-dark">Column 4</div>
+  <div class="col-12 col-lg-4 bg-secondary">Column 5</div>
+</div>
+<footer class="border bg-danger">
+  This is Footer
+</footer>
+</div>

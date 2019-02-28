@@ -1,0 +1,10 @@
+User Name: <input type="text" [(ngModel)]="userName">
+<button (click)="onSearch()">Search</button>
+<div *ngIf="response">
+  <!-- You can also use ? to hide the various p tags syntax: {{response?.login}} -->
+<p>Login Name: {{response.login}} </p>
+<p>Number of repos: {{response.public_repos}} </p>
+<p>Number of gists: {{response.public_gists}}  </p>
+<p>Number of followers: {{response.followers}} </p>
+<p>Location: {{response.location}} </p>
+</div>
